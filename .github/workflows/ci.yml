@@ -10,8 +10,8 @@ on:
       - '**.md'
 jobs:
   ci:
-    runs-on: ${{ matrix. os }}
-    name: ${{ matrix.name }}
+    runs-on: self-hosted
+    name: TestVM
     strategy:
       fail-fast: false
       matrix:
