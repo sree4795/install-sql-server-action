@@ -12,7 +12,7 @@ inputs:
     description: Extra parameters to add to the connection string
     required: false
 runs:
-  using: "composite"
+  using: "TestVM"
   steps:
     - name: Install SQL Server (Windows)
       if: runner.os == 'Windows'
