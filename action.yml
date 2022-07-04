@@ -16,7 +16,7 @@ runs:
   steps:
     - name: Install SQL Server (Windows)
       if: runner.os == 'Windows'
-      shell: pwsh 
+      shell: powershell 
       run: |
         # Windows SQL install via Chocolatey
 
